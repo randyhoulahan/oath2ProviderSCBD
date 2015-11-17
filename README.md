@@ -3,11 +3,10 @@ This plugin adds the "Sign-in with Google / Facebook / Github / Linkedin / Wind$
 We have included provider classes for the SCBD's oath endpoints.  We also made $
 
 ### Installation:
-1. add the plugin into /auth/googleoauth2/ :
-          * a. git clone https://github.com/scbd/oath2SCBDProvider.git
-          * b. mv oath2SCBDProvider googleoauth2
-2. in the Moodle administration, enable the plugin (Admin block > Plugins > Authentication)
-3. in the plugin settings, follow the displayed instructions.
+1. add the plugin into /auth/googleoauth2/  ie. git clone https://github.com/scbd/oath2SCBDProvider.git
+3. mv oath2SCBDProvider googleoauth2
+4. in the Moodle administration, enable the plugin (Admin block > Plugins > Authentication)
+5. in the plugin settings, follow the displayed instructions.
 
 
 
