@@ -9,12 +9,13 @@ class scbd extends AbstractProvider
     public $scopeSeparator = ' ';
 
 
-
+//= array('firstname','lastname','email','accountid');
     public $scopes = [
 
-        'name',
-        'account_id',
+        'firstname',
+        'lastname',
         'email',
+        'accountid'
     ];
 
     public $authorizationHeader = 'OAuth';
@@ -48,19 +49,19 @@ class scbd extends AbstractProvider
 
     public function urlAuthorize()
     {
-        return 'http://localhost:3000/oauth2/authorize';
+        return 'https://accounts.cbd.int/oauth2/authorize';
     }
 
     public function urlAccessToken()
     {
-        return 'http://192.168.1.122:8000/api/v2015/oauth2/token';
+        return 'https://cbd.int/api/v2015/oauth2/token';
     }
 
     public function urlUserDetails(\League\OAuth2\Client\Token\AccessToken $token)
     {
 
         return
-            'http://192.168.1.122:8000/api/v2015/oauth2/token-info/'.$token;
+            'https://cbd.int/api/v2015/oauth2/token-info/'.$token;
     }
 
     public function userDetails($response, \League\OAuth2\Client\Token\AccessToken $token)
