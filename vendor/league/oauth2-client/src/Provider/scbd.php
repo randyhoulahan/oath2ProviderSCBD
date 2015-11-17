@@ -54,14 +54,14 @@ class scbd extends AbstractProvider
 
     public function urlAccessToken()
     {
-        return 'https://cbd.int/api/v2015/oauth2/token';
+        return 'https://api.cbd.int/api/v2015/oauth2/token';
     }
 
     public function urlUserDetails(\League\OAuth2\Client\Token\AccessToken $token)
     {
 
         return
-            'https://cbd.int/api/v2015/oauth2/token-info/'.$token;
+            'https://api.cbd.int/api/v2015/oauth2/token-info/'.$token;
     }
 
     public function userDetails($response, \League\OAuth2\Client\Token\AccessToken $token)
