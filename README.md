@@ -6,7 +6,7 @@ We have included provider classes for the SCBD's oath endpoints.  We also made $
 1. add the plugin into /auth/googleoauth2/
           a. git clone https://github.com/scbd/oath2SCBDProvider.git
           b. mv oath2SCBDProvider googleoauth2
-2. in the Moodle administration, enable the plugin (Admin block > Plugins > Aut$
+2. in the Moodle administration, enable the plugin (Admin block > Plugins > Authentication)
 3. in the plugin settings, follow the displayed instructions.
 
 
